@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temple Album - Responsive Picture Album">
+  <meta name="author" content="Your Name">
+  <title>Temple Album</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <!-- JavaScript Link -->
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <nav class="navigation">
+      <button class="menu-button">≡</button>
+      <ul class="menu-items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Old</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Large</a></li>
+        <li><a href="#">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Home</h2>
+    <section class="album">
+      <!-- Template for figure -->
+      <figure>
+        <img src="images/sandiegotemple.jpg" alt="San Diego Temple">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <!-- Duplicate the figure 8 more times -->
+      <figure>
+        <img src="images/sandiegotemple2.jpg" alt="San Diego Temple">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <!-- Add more figures -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Your Name | Your Location</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

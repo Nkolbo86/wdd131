@@ -1,0 +1,12 @@
+@media screen and (min-width: 768px) {
+    .menu-items {
+      display: flex; /* Show menu in larger views */
+      flex-direction: row;
+      gap: 1rem;
+    }
+  
+    .album {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Multi-column layout */
+    }
+  }
+  
