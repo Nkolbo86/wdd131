@@ -1,0 +1,206 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4a148c;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation Container */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    position: relative;
+}
+
+/* Hamburger Menu Button */
+.menu-button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+    display: block; /* Make sure it's visible */
+    position: absolute;
+    left: 10px; /* Positions the hamburger menu to the left */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Default: Hide the menu items (for small screens) */
+.menu-items {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #4a148c;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Show menu when 'open' class is applied */
+.menu-items.open {
+    display: flex;
+}
+
+/* Style for menu links */
+.menu-items a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.menu-items a:hover {
+    background: #7b1fa2;
+}
+
+/* Ensure navigation is properly positioned */
+nav {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+/* Temple Album Grid */
+.album {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Temple Card Styles */
+.temple-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.temple-card:hover {
+    transform: translateY(-5px);
+}
+
+.temple-card figure {
+    margin: 0;
+    padding: 0;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.temple-card h3 {
+    margin: 0.5rem 0;
+    color: #4a148c;
+}
+
+.temple-card p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    background-color: #4a148c;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive Navigation for Large Screens */
+@media screen and (min-width: 768px) {
+    /* Show hamburger menu in mobile view */
+.menu-button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block; /* Ensure it's visible */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+/* Default: Hide menu items */
+.menu-items {
+    display: none;
+    flex-direction: column;
+    background: #4a148c;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Show menu when open */
+.menu-items.open {
+    display: flex;
+}
+
+/* Hide hamburger menu on large screens */
+@media screen and (min-width: 768px) {
+    .menu-button {
+        display: none;
+    }
+    .menu-items {
+        display: flex;
+        position: static;
+        flex-direction: row;
+    }
+}
+
+
+    .menu-items {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        position: static;
+        width: auto;
+        background: none;
+        box-shadow: none;
+    }
+
+    .menu-items a {
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+}

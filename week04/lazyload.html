@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazy Loading Demo</title>
+  <link rel="stylesheet" href="styles/lazyload.css">
+  <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Lazy Loading Example</h1>
+  </header>
+
+  <main>
+    <img src="styles/images/531-400x600.jpg" 
+         data-src="styles/images/531-400x600.jpg" 
+         alt="Image 1" 
+         loading="lazy" 
+         class="lazy">
+    <img src="styles/images/1016-400x600.jpg" 
+         data-src="styles/images/1016-400x600.jpg" 
+         alt="Image 2" 
+         loading="lazy" 
+         class="lazy">
+    <img src="styles/images/pic1.jpg" 
+         data-src="styles/images/pic1.jpg" 
+         alt="Image 3" 
+         loading="lazy" 
+         class="lazy">
+    <img src="styles/images/pic2.jpg" 
+         data-src="styles/images/pic2.jpg" 
+         alt="Image 4" 
+         loading="lazy" 
+         class="lazy">
+    <img src="styles/images/pic3.jpg" 
+         data-src="styles/images/pic3.jpg" 
+         alt="Image 5" 
+         loading="lazy" 
+         class="lazy">
+    <img src="styles/images/pic6.jpg" 
+         data-src="styles/images/pic6.jpg" 
+         alt="Image 6" 
+         loading="lazy" 
+         class="lazy">
+  </main>
+
+  <footer>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
