@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Table Example</title>
+  <style>
+    /* Styling the table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+    }
+
+    caption {
+      caption-side: bottom;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      text-align: center;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #333;
+      color: white;
+    }
+
+    /* Zebra striping for rows */
+    tbody tr:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #e8f5ff;
+    }
+
+    /* Styling for the title */
+    .table-title {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="table-title">ACME Wildwest Services</div>
+  <table>
+    <caption>Table 1: Account Feature Comparison</caption>
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Basic</th>
+        <th>Premium</th>
+        <th>Deluxe</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Feature 1</td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>✔️</td>
+      </tr>
+      <tr>
+        <td>Feature 2</td>
+        <td>❌</td>
+        <td>✔️</td>
+        <td>✔️</td>
+      </tr>
+      <tr>
+        <td>Feature 3</td>
+        <td>❌</td>
+        <td>❌</td>
+        <td>✔️</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
