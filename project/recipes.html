@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Recipes - Recipes</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="scripts/main.js"></script>
+    <style>
+        .recipe-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        .recipe-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .small-recipe-img {
+            width: 50px; /* Much smaller size */
+            height: auto;
+            margin-right: 10px; /* Space between image and text */
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recipes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="add-recipe.html">Submit a Recipe</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="recipe-list">
+            <h2>Our Family Recipes</h2>
+            <ul id="recipe-container">
+                <li>
+                    <img src="images/applepie.jpg" alt="Grandma's Apple Pie" class="small-recipe-img" loading="lazy">
+                    <a href="grandmas-apple-pie.html">Grandma's Apple Pie</a>
+                </li>
+                <li>
+                    <img src="images/lasagna.jpg" alt="Homemade Lasagna" class="small-recipe-img" loading="lazy">
+                    <a href="lasagna.html">Homemade Lasagna</a>
+                </li>
+                <li>
+                    <img src="images/cookies.jpg" alt="Chocolate Chip Cookies" class="small-recipe-img" loading="lazy">
+                    <a href="chocolate-chip-cookies.html">Chocolate Chip Cookies</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Family Recipes | Natalie Kolbo | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
