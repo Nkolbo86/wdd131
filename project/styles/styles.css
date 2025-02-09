@@ -1,0 +1,142 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url('../images/homepage.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    cursor: url("../images/wooden-spoon.png") 16 16, auto;
+}
+
+header {
+    background-color: rgba(165, 42, 42, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: rgba(139, 0, 0, 0.8);
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background: #EAC67A;
+    color: #A52A2A;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(234, 198, 122, 0.85);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.featured-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.featured-images img {
+    width: 640px;
+    height: 640px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    loading: lazy;
+}
+
+.recipe-list article {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: white;
+    border-radius: 5px;
+}
+
+.recipe-detail img {
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    background: none;
+    box-shadow: none;
+    loading: lazy;
+}
+
+.recipe-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+label, textarea, input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+}
+
+button {
+    background-color: #A52A2A;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #8B0000;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(165, 42, 42, 0.8);
+    color: white;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
